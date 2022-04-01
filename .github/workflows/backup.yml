@@ -1,10 +1,14 @@
 name: "Backup Notion Workspace"
     
 on:
-  pull_request:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: '* * * * *'
+
+#   pull_request:
+#   push:
+#     branches:
+#       - main
+
 
 jobs:
   backup:
